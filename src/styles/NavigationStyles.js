@@ -28,6 +28,10 @@ export const Icon = styled.img`
 
 export const Menu = styled.ul`
   display: flex;
+
+  @media(max-width: 375px){
+        display: none;
+    }
 `;
 
 export const MenuItem = styled.li`

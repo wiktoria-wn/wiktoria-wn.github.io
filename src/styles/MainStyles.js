@@ -11,6 +11,10 @@ export const Title = styled.p`
   color: #1b919e;
   margin: 0;
   font-weight: bold;
+
+  @media(max-width: 375px){
+        font-size: 32pt;
+    }
 `;
 
 export const Subtitle = styled.p`
@@ -18,4 +22,8 @@ export const Subtitle = styled.p`
   font-size: 24pt;
   color: ${(props) => (props.blue ? "#1b919e" : "#434140")};
   font-weight: bold;
+
+  @media(max-width: 375px){
+        font-size: 23pt;
+    }
 `;

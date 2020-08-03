@@ -5,6 +5,11 @@ export const SkillsSection = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media(max-width: 375px){
+    flex-direction: column;
+    margin: 10px 0 10px 0;
+  }
 `;
 
 export const Skill = styled.div`
