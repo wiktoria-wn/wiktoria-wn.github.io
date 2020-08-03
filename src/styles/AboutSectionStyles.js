@@ -12,10 +12,6 @@ export const AboutSection = styled.div`
 export const Header = styled.div`
     display: flex;
     flex-direction: column;
-
-    @media(max-width: 375px){
-        text-align: center;
-    }
 `
 
 export const HeaderSection = styled.div`
@@ -26,6 +22,8 @@ export const HeaderSection = styled.div`
     border-bottom: 2px solid #1B919E;
     
     @media(max-width: 375px){
+        text-align: center;
+        justify-content: center;
         padding: 10px 0 10px 0;
     }
 `
@@ -47,5 +45,7 @@ export const Description = styled.p`
 
     @media(max-width: 375px){
         padding: 10px 0 10px 0;
+        justify-content: center;
+        font-size: 12pt;
     }
 `

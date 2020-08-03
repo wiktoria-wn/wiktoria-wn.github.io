@@ -13,7 +13,7 @@ export const Title = styled.p`
   font-weight: bold;
 
   @media(max-width: 375px){
-        font-size: 32pt;
+        font-size: 26pt;
     }
 `;
 
@@ -24,6 +24,6 @@ export const Subtitle = styled.p`
   font-weight: bold;
 
   @media(max-width: 375px){
-        font-size: 23pt;
+        font-size: 18pt;
     }
 `;

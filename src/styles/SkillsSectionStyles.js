@@ -26,4 +26,8 @@ export const SkillItem = styled.ul`
   padding: 0;
   margin-bottom: 20px;
   font-size: 16pt;
+
+  @media(max-width: 375px){
+    font-size: 12pt;
+  }
 `;
