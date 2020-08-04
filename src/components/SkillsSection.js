@@ -1,6 +1,9 @@
 import React from "react";
 import {SkillsSection, Skill, SkillList, SkillItem} from '../styles/SkillsSectionStyles';
 import {Subtitle} from '../styles/MainStyles';
+import TechnologiesData from '../data/technologies.json';
+import LibrariesData from '../data/libraries.json';
+import LanguagesData from '../data/languages.json';
 
 function Skills() {
   return (
@@ -8,27 +11,31 @@ function Skills() {
       <Skill>
         <Subtitle blue>Technologies</Subtitle>
         <SkillList>
-          <SkillItem>JavaScript Ecma 5, Ecma 6</SkillItem>
-          <SkillItem>TypeScript</SkillItem>
-          <SkillItem>PHP</SkillItem>
-          <SkillItem>MySql</SkillItem>
-          <SkillItem>ReactNative</SkillItem>
-          <SkillItem>HTML5, CSS3, XML, JSON</SkillItem>
+          {TechnologiesData.map((item) => {
+            return(
+            <SkillItem key={item.key}>{item.cotent}</SkillItem>
+            )
+          })}
         </SkillList>
       </Skill>
       <Skill>
         <Subtitle blue>Libraries</Subtitle>
         <SkillList>
-          <SkillItem>React.js</SkillItem>
-          <SkillItem>Node.js</SkillItem>
-          <SkillItem>jQuery.js</SkillItem>
+          {LibrariesData.map((item) => {
+            return(
+            <SkillItem key={item.key}>{item.cotent}</SkillItem>
+            )
+          })}
         </SkillList>
       </Skill>
       <Skill>
         <Subtitle blue>Languages</Subtitle>
         <SkillList>
-          <SkillItem>English B2</SkillItem>
-          <SkillItem>Polish native</SkillItem>
+          {LanguagesData.map((item) => {
+            return(
+            <SkillItem key={item.key}>{item.cotent}</SkillItem>
+            )
+          })}
         </SkillList>
       </Skill>
     </SkillsSection>

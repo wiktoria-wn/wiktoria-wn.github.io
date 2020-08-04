@@ -4,38 +4,28 @@ export const TopBar = styled.div`
   color: #434140;
   font-weight: medium;
   display: flex;
+  justify-content: flex-end;
   flex-direction: row;
-  justify-content: space-between;
   border-bottom: 2px solid #1b919e;
   align-items: center;
   padding: 10px 40px;
-`;
-
-export const Media = styled.div`
-  display: flex;
-
-  &&:hover{
-      color: #1b919e;
-      cursor: pointer;
-  }
-`;
-
-export const Icon = styled.img`
-  width: 28px;
-  height: 28px;
-  margin-right: 32px;
-`;
-
-export const Menu = styled.ul`
-  display: flex;
+  position:fixed;
+  top:0;
+  right: 0;
+  width: 100vw;
+  background: #fff;
 
   @media(max-width: 375px){
-        display: none;
+        justify-content: center;
     }
 `;
 
+export const Menu = styled.ul`
+    display: flex;
+`;
+
 export const MenuItem = styled.li`
-  margin-left: 32px;
+  margin: 0 8px;
   display: inline;
 
   &&:hover{

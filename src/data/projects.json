@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "title": "Customer website upadte",
+    "cotent": "The client was a UK Brand that helps companies tackle new market realities. On this project, I was responsible for visual changes and adding cookies to the customers' website. Tech-stack: React.js and Cookiebot.",
+    "src": "../assets/updateimage.svg"
+  },
+  {
+    "id": "2",
+    "title": "Mobile application rebranding",
+    "cotent": "The application allows user quick payments using the phone as a terminal and can be used by seller. I was responsible for creating new functionaities in this app. Tech-stack: ReactNative.",
+    "src": "../assets/rebrandimage.svg"
+  }
+]

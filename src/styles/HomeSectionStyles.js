@@ -4,7 +4,7 @@ export const HomeSection = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 50px 0;
+    margin: 150px 0 60px 0;
 `
 
 export const HomeImage = styled.img`

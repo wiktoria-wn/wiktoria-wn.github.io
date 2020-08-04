@@ -1,24 +1,17 @@
-import React from 'react';
-import {TopBar, Media, Icon, Menu, MenuItem} from '../styles/NavigationStyles';
-import Github from '../assets/github.svg';
-import LinkedIn from '../assets/linkedin.svg';
-
+import React from "react";
+import { TopBar, Menu, MenuItem } from "../styles/NavigationStyles";
+import MenuData from "../data/menu.json";
 
 function Nav() {
-    return (
-      <TopBar>
-          <Media>
-              <Icon src={Github} alt="github"/>
-              <Icon src={LinkedIn} alt="linkedin"/>
-          </Media>
-          <Menu>
-              <MenuItem>Home</MenuItem>
-              <MenuItem>About</MenuItem>
-              <MenuItem>Work</MenuItem>
-              <MenuItem>Contact</MenuItem>
-          </Menu>
-      </TopBar>
-    );
-  }
-  
-  export default Nav;
+  return (
+    <TopBar>
+      <Menu>
+        {MenuData.map((item, index) => {
+          return <MenuItem key={index.id}>{item.content}</MenuItem>;
+        })}
+      </Menu>
+    </TopBar>
+  );
+}
+
+export default Nav;

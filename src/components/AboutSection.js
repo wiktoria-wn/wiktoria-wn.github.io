@@ -1,31 +1,23 @@
 import React from "react";
 import Skills from "./SkillsSection";
-import { Title, Subtitle } from "../styles/MainStyles";
-import {
-  AboutSection,
-  Header,
-  HeaderSection,
-  AboutImage,
-  Description,
-} from "../styles/AboutSectionStyles.js";
-import Image from "../assets/aboutimage.svg";
+import { Title, Subtitle, SectionContent } from "../styles/MainStyles";
+import { HeaderSection, Description, Header } from "../styles/MainStyles";
 
 function About() {
   return (
-    <AboutSection>
+    <SectionContent blue>
       <HeaderSection>
         <Header>
           <Title>Hello World!</Title>
-          <Subtitle>A few words about me</Subtitle>
+          <Subtitle>A few words about my skills</Subtitle>
         </Header>
-        <AboutImage src={Image} />
       </HeaderSection>
       <Description>
         Hello! As you probably know from the home page my name is Wiktoria and
         I'm Junior JavaScript Developer. But what skills do really I have?
       </Description>
       <Skills />
-    </AboutSection>
+    </SectionContent>
   );
 }
 
